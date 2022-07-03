@@ -17,7 +17,7 @@ contract SmartContract{
         //Choice choice;
     }
     function getx() public view returns(string memory){
-        return x; //everyone can now the x input.
+        return x; //everyone can know the x input.
     }
     function setSecret(string memory _x) public onlyOwner {
         x= _x;  //deciding the x input value here.
