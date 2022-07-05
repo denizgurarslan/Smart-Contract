@@ -150,7 +150,7 @@ int sha256_generator()
 
     char *buf;
     int n;
-    buf = "deniz";
+    buf = "abc";  // write the string here that you want to put in the generator.
     n = strlen(buf);
 
     sha256_init(&ctx);
