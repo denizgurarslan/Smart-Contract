@@ -14,7 +14,7 @@ contract SmartContract{
     struct CommitChoice {
         address playerAddress;
         bytes32 commitment;
-        //Choice choice;
+        
     }
     function getx() public view returns(string memory){
         return x; //everyone can know the x input.
@@ -22,14 +22,7 @@ contract SmartContract{
     function setSecret(string memory _x) public onlyOwner {
         x= _x;  //deciding the x input value here.
     }
-    /*
-    function setTM(uint _a,uint[] polynomial) public{
-        uint a=_a;
-        for(uint i=1;i<=a;i++)
-        {
-
-        }
-    }*/
+    
 
 
     
