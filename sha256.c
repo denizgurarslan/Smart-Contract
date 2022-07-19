@@ -150,7 +150,7 @@ int sha256_generator()
 
     char *buf;
     int n;
-    buf = "abc";  // write the string here that you want to put in the generator.
+    buf = "abc";
     n = strlen(buf);
 
     sha256_init(&ctx);
@@ -160,7 +160,7 @@ int sha256_generator()
     sha256_final(&ctx,results);
 
     /* Print the digest as one long hex value */
-    printf("0x");
+    //printf("0x");
 
     for (n = 0; n < SHA256_BLOCK_SIZE; n++)
         printf("%02x", results[n]);
